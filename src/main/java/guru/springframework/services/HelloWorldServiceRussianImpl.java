@@ -1,4 +1,9 @@
 package guru.springframework.services;
 
-public class HelloWorldServiceRussianImpl {
+public class HelloWorldServiceRussianImpl implements HelloWorldService{
+
+    @Override
+    public String getGreeting() {
+        return "Russian Hello World!";
+    }
 }
