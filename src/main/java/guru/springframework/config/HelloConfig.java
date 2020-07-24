@@ -9,10 +9,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 
-@Configuration
+//@Configuration
 public class HelloConfig {
 
     // This will be injected downstairs
+    /*
     @Bean
     public HelloWorldFactory helloWorldFactory() {
         return new HelloWorldFactory();
@@ -56,4 +57,5 @@ public class HelloConfig {
     public HelloWorldService helloWorldServiceRussian(HelloWorldFactory factory) {
         return factory.createHelloWorldService("ru");
     }
+    */
 }

@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
 // By this annotation Spring registeres this class as a bean
-@Controller
+//@Controller
 public class GreetingController {
 
     private HelloWorldService helloWorldService;
@@ -16,21 +16,21 @@ public class GreetingController {
 
     private HelloWorldService helloWorldServiceFrench;
 
-    @Autowired
+    //@Autowired
     public void setHelloWorldService(HelloWorldService helloWorldService) {
         this.helloWorldService = helloWorldService;
     }
 
-    @Autowired
+    //@Autowired
     // autowire by name  --- name of the method from config
-    @Qualifier("helloWorldServiceGerman")
+    //@Qualifier("helloWorldServiceGerman")
     public void setHelloWorldServiceGerman(HelloWorldService helloWorldServiceGerman) {
         this.helloWorldServiceGerman = helloWorldServiceGerman;
     }
 
-    @Autowired
+    //@Autowired
     // autowire by name  --- name of the BEAN from config
-    @Qualifier("french")
+    //@Qualifier("french")
     public void setHelloWorldServiceFrench(HelloWorldService helloWorldServiceFrench) {
         this.helloWorldServiceFrench = helloWorldServiceFrench;
     }
